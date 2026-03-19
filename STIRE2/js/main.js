@@ -127,3 +127,47 @@ const cntObs = new IntersectionObserver(entries => {
 
 const statSection = document.querySelector('.stat-grid');
 if (statSection) cntObs.observe(statSection);
+
+/* ---- SCROLL TO TOP ---- */
+const scrollToTopBtn = document.getElementById('scrollToTop');
+
+if (scrollToTopBtn) {
+  // Show/hide button based on scroll position
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+      scrollToTopBtn.style.opacity = '1';
+      scrollToTopBtn.style.pointerEvents = 'auto';
+    } else {
+      scrollToTopBtn.style.opacity = '0';
+      scrollToTopBtn.style.pointerEvents = 'none';
+    }
+  });
+
+  // Scroll to top when clicked
+  scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+}
+
+/* ---- INFINITE SERVICES LOOP ---- */
+const servicesTrack = document.querySelector('.services-track');
+if (servicesTrack) {
+  // Clone the track content for seamless loop
+  const originalContent = servicesTrack.innerHTML;
+  servicesTrack.innerHTML = originalContent + originalContent;
+  
+  // Pause animation on hover
+  const servicesLoop = document.querySelector('.services-loop');
+  if (servicesLoop) {
+    servicesLoop.addEventListener('mouseenter', () => {
+      servicesTrack.style.animationPlayState = 'paused';
+    });
+    
+    servicesLoop.addEventListener('mouseleave', () => {
+      servicesTrack.style.animationPlayState = 'running';
+    });
+  }
+}

@@ -784,3 +784,409 @@ footer {
   footer { flex-direction: column; gap: 24px; text-align: center; }
   .f-links { flex-wrap: wrap; justify-content: center; }
 }
+
+/* ================================================================
+   INFINITE SERVICES LOOP
+   ================================================================ */
+.services-loop {
+  background: var(--gold);
+  padding: 20px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.services-track {
+  display: flex;
+  animation: scroll 20s linear infinite;
+  white-space: nowrap;
+}
+
+.services-item,
+.services-bullet {
+  display: inline-flex;
+  align-items: center;
+  color: var(--dark);
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0 2rem;
+}
+
+.services-bullet {
+  color: var(--dark);
+  opacity: 0.6;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ================================================================
+   FOOTER SOCIAL MEDIA & CONTACT
+   ================================================================ */
+.f-social {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+  justify-content: center;
+}
+
+.social-icon {
+  color: var(--ink3);
+  transition: color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: var(--gold);
+  border-color: var(--gold);
+  transform: translateY(-2px);
+}
+
+.f-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin: 1.5rem 0;
+  align-items: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--ink2);
+  font-size: 0.95rem;
+  font-family: var(--font-ui);
+}
+
+.contact-item svg {
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+.contact-item a {
+  color: var(--ink2);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: var(--gold);
+}
+
+/* Update footer layout for mobile */
+@media (max-width: 768px) {
+  .f-social {
+    gap: 1rem;
+  }
+  
+  .social-icon {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .f-contact {
+    gap: 0.6rem;
+  }
+  
+  .contact-item {
+    font-size: 0.9rem;
+  }
+}
+
+/* ================================================================
+   CONTACT PAGE STYLES
+   ================================================================ */
+.contact-hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 120px 28px 80px;
+}
+
+.contact-hero-content {
+  max-width: 600px;
+}
+
+.contact-title {
+  font-family: var(--font-disp);
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  font-weight: 700;
+  line-height: 0.9;
+  margin: 1rem 0 2rem;
+  color: var(--ink);
+}
+
+.contact-title span {
+  color: var(--gold);
+}
+
+.contact-subtitle {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--ink2);
+  max-width: 500px;
+}
+
+.contact-main {
+  padding: 100px 28px;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.contact-form-section {
+  max-width: 600px;
+}
+
+.contact-form {
+  margin-top: 2rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.form-group label {
+  display: block;
+  font-family: var(--font-ui);
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-info-section {
+  position: sticky;
+  top: 100px;
+}
+
+.contact-info-card {
+  background: var(--bg2);
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  margin-bottom: 2rem;
+}
+
+.contact-info-header h3 {
+  font-family: var(--font-disp);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.contact-info-header p {
+  color: var(--ink2);
+  font-size: 0.95rem;
+}
+
+.contact-methods {
+  margin-top: 2rem;
+}
+
+.contact-method {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--gold);
+  color: var(--dark);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-method div {
+  flex: 1;
+}
+
+.contact-label {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--ink);
+  margin-bottom: 0.25rem;
+}
+
+.contact-method a {
+  color: var(--ink2);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.contact-method a:hover {
+  color: var(--gold);
+}
+
+.social-card {
+  background: var(--bg2);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  text-align: center;
+}
+
+.social-card h4 {
+  font-family: var(--font-disp);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 1.5rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-links .social-icon {
+  width: 44px;
+  height: 44px;
+}
+
+/* ================================================================
+   SCROLL TO TOP BUTTON
+   ================================================================ */
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 56px;
+  height: 56px;
+  background: var(--gold);
+  color: var(--dark);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.scroll-to-top:hover {
+  background: var(--gold2);
+  transform: translateY(-2px);
+  box-shadow: var(--shadowLg);
+}
+
+.scroll-to-top svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* ================================================================
+   CONTACT PAGE RESPONSIVE
+   ================================================================ */
+@media (max-width: 968px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  
+  .contact-info-section {
+    position: static;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-hero {
+    padding: 120px 28px 60px;
+    min-height: 70vh;
+  }
+  
+  .contact-main {
+    padding: 80px 28px;
+  }
+  
+  .contact-info-card {
+    padding: 2rem;
+  }
+  
+  .scroll-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 48px;
+    height: 48px;
+  }
+  
+  .scroll-to-top svg {
+    width: 20px;
+    height: 20px;
+  }
+}
