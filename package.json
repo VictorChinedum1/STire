@@ -1,0 +1,29 @@
+{
+  "name": "ceedd-portfolio",
+  "version": "1.0.0",
+  "description": "Ceedd Portfolio Website - Modern web & app development studio portfolio",
+  "main": "STIRE2/index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "build": "echo 'Static site - no build process needed'",
+    "deploy": "echo 'Deploy to Netlify via git push'"
+  },
+  "keywords": [
+    "portfolio",
+    "web-development",
+    "app-development",
+    "ceedd",
+    "static-site",
+    "netlify"
+  ],
+  "author": "Ceedd",
+  "license": "© 2025 Ceedd. All rights reserved.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VictorChinedum1/STire.git"
+  },
+  "homepage": "https://ceedd.netlify.app",
+  "devDependencies": {},
+  "dependencies": {}
+}
