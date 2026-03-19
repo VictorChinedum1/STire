@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>STIRE — Web &amp; App Development</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- ================================================================
+     LOADING SCREEN
+     ================================================================ -->
+<div id="loader">
+  <canvas id="loader-canvas" width="340" height="340"></canvas>
+
+  <div class="loader-text">
+    <div class="loader-welcome">Welcome to</div>
+    <div class="loader-title">STI<span>RE</span></div>
+    <p class="loader-tagline">
+      Where we make your ideal website<br>and passion a reality.
+    </p>
+  </div>
+
+  <div class="loader-progress">
+    <div class="loader-bar" id="loader-bar"></div>
+  </div>
+
+  <button class="loader-enter" id="loader-enter" style="display:none;">
+    Enter &rarr;
+  </button>
+</div>
+
+<!-- CURSOR -->
+<div class="cursor"></div>
+<div class="cursor-ring"></div>
+
+<!-- ================================================================
+     NAV
+     ================================================================ -->
+<nav id="main-nav">
+  <a href="#hero" class="nav-logo">STI<span>RE</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#process">Process</a></li>
+  </ul>
+  <a href="#cta" class="nav-cta">Start a Project</a>
+</nav>
+
+<!-- ================================================================
+     HERO
+     ================================================================ -->
+<section class="hero" id="hero">
+  <div class="hero-grid"></div>
+
+  <div class="hero-left">
+    <div class="hero-eyebrow">✦ Web &amp; App Development Studio</div>
+    <h1 class="hero-title-main">
+      <div>WE</div>
+      <div class="gold-word">BUILD</div>
+      <div class="outline-word">DIGITAL</div>
+    </h1>
+    <p class="hero-sub">
+      STIRE transforms bold ideas into web experiences and applications
+      that <em>perform, convert, and endure.</em>
+    </p>
+    <div class="hero-actions">
+      <a href="#work" class="btn-gold">See Our Work</a>
+      <a href="#cta" class="btn-outline">Start a Project &rarr;</a>
+    </div>
+    <div class="tech-row">
+      <span class="t-pill">React</span>
+      <span class="t-pill">Next.js</span>
+      <span class="t-pill">Node.js</span>
+      <span class="t-pill">React Native</span>
+      <span class="t-pill">TypeScript</span>
+      <span class="t-pill">Flutter</span>
+      <span class="t-pill">AWS</span>
+      <span class="t-pill">Figma</span>
+    </div>
+  </div>
+
+  <!-- ROBOT: hero -->
+  <div class="robot-stage" style="width:520px;height:600px;right:-20px;top:52%;">
+    <canvas class="robot-canvas" width="520" height="600"></canvas>
+  </div>
+</section>
+
+<div class="gold-rule"></div>
+
+<!-- ================================================================
+     ABOUT
+     ================================================================ -->
+<section id="about">
+  <div class="inner">
+    <div>
+      <div class="s-label reveal">Who We Are</div>
+      <h2 class="s-title reveal">We Make the Web <em>Work</em> For You</h2>
+      <p class="s-body reveal rd1">
+        STIRE is a focused web &amp; app development studio. We don't do everything
+        — we do <strong>one thing exceptionally well:</strong> build digital products
+        that solve real problems and drive measurable results.
+      </p>
+      <p class="s-body reveal rd2" style="margin-top:18px;">
+        From pixel-perfect frontends to robust backend systems, every line of code
+        is intentional. We partner closely with clients to understand their users,
+        their goals, and what success truly looks like.
+      </p>
+      <div class="stat-grid reveal rd3">
+        <div class="stat-item">
+          <div class="stat-n">50+</div>
+          <div class="stat-l">Projects Delivered</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-n">98%</div>
+          <div class="stat-l">Client Satisfaction</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-n">3x</div>
+          <div class="stat-l">Avg. Conversion Lift</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-n">4yr</div>
+          <div class="stat-l">In the Industry</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- placeholder to keep grid even — robot overlaps -->
+    <div style="min-height:400px;position:relative;"></div>
+  </div>
+
+  <!-- ROBOT: about -->
+  <div class="robot-stage" style="width:460px;height:520px;right:-30px;top:48%;">
+    <canvas class="robot-canvas" width="460" height="520"></canvas>
+  </div>
+</section>
+
+<div class="gold-rule"></div>
+
+<!-- ================================================================
+     SERVICES
+     ================================================================ -->
+<section id="services">
+  <div class="services-intro">
+    <div>
+      <div class="s-label reveal">What We Do</div>
+      <h2 class="s-title reveal">Our Core <em>Services</em></h2>
+    </div>
+    <p class="services-intro-text reveal">
+      Every service is engineered to make your digital presence stronger
+      and your business outcomes measurable.
+    </p>
+  </div>
+
+  <div class="services-grid">
+    <div class="svc-card reveal rd1">
+      <div class="svc-num">01</div>
+      <span class="svc-icon">🌐</span>
+      <div class="svc-title">Web Development</div>
+      <p class="svc-desc">Fast, responsive, SEO-ready websites from landing pages to complex platforms — modern stacks that scale.</p>
+      <div class="svc-tags">
+        <span class="svc-tag">React</span><span class="svc-tag">Next.js</span><span class="svc-tag">CMS</span><span class="svc-tag">SEO</span>
+      </div>
+    </div>
+
+    <div class="svc-card reveal rd2">
+      <div class="svc-num">02</div>
+      <span class="svc-icon">📱</span>
+      <div class="svc-title">Mobile Apps</div>
+      <p class="svc-desc">iOS &amp; Android apps that feel native and perform flawlessly. Cross-platform excellence with React Native &amp; Flutter.</p>
+      <div class="svc-tags">
+        <span class="svc-tag">React Native</span><span class="svc-tag">Flutter</span><span class="svc-tag">iOS</span><span class="svc-tag">Android</span>
+      </div>
+    </div>
+
+    <div class="svc-card reveal rd3">
+      <div class="svc-num">03</div>
+      <span class="svc-icon">⚙️</span>
+      <div class="svc-title">Full-Stack Apps</div>
+      <p class="svc-desc">End-to-end applications — bulletproof backends, databases &amp; APIs. SaaS platforms, dashboards, portals.</p>
+      <div class="svc-tags">
+        <span class="svc-tag">Node.js</span><span class="svc-tag">PostgreSQL</span><span class="svc-tag">REST API</span>
+      </div>
+    </div>
+
+    <div class="svc-card reveal rd1">
+      <div class="svc-num">04</div>
+      <span class="svc-icon">🛒</span>
+      <div class="svc-title">E-Commerce</div>
+      <p class="svc-desc">Online stores built to sell. Custom Shopify themes, headless commerce &amp; conversion-optimized UX flows.</p>
+      <div class="svc-tags">
+        <span class="svc-tag">Shopify</span><span class="svc-tag">Stripe</span><span class="svc-tag">CRO</span>
+      </div>
+    </div>
+
+    <div class="svc-card reveal rd2">
+      <div class="svc-num">05</div>
+      <span class="svc-icon">🎨</span>
+      <div class="svc-title">UI / UX Design</div>
+      <p class="svc-desc">Design that converts. We prototype, test, and iterate until every interaction is intuitive and delightful.</p>
+      <div class="svc-tags">
+        <span class="svc-tag">Figma</span><span class="svc-tag">Prototyping</span><span class="svc-tag">Testing</span>
+      </div>
+    </div>
+
+    <div class="svc-card reveal rd3">
+      <div class="svc-num">06</div>
+      <span class="svc-icon">🚀</span>
+      <div class="svc-title">Speed &amp; Optimisation</div>
+      <p class="svc-desc">Slow sites kill conversions. We audit and re-engineer for peak performance — sub-second load times, always.</p>
+      <div class="svc-tags">
+        <span class="svc-tag">Core Web Vitals</span><span class="svc-tag">CDN</span><span class="svc-tag">Caching</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ROBOT: services -->
+  <div class="robot-stage" style="width:440px;height:500px;right:-60px;top:44%;">
+    <canvas class="robot-canvas" width="440" height="500"></canvas>
+  </div>
+</section>
+
+<div class="gold-rule"></div>
+
+<!-- ================================================================
+     PROCESS
+     ================================================================ -->
+<section id="process">
+  <div class="s-label reveal">How We Work</div>
+  <h2 class="s-title reveal" style="max-width:540px;">
+    Simple. <em>Proven.</em> Process.
+  </h2>
+
+  <div class="process-row">
+    <div class="proc-step reveal rd1">
+      <div class="proc-num">01</div>
+      <span class="proc-icon">🔍</span>
+      <div class="proc-title">Discover</div>
+      <p class="proc-desc">We dig deep into your goals, users, competitors &amp; constraints. Strategy before a single pixel.</p>
+      <div class="proc-line"></div>
+    </div>
+    <div class="proc-step reveal rd2">
+      <div class="proc-num">02</div>
+      <span class="proc-icon">✏️</span>
+      <div class="proc-title">Design</div>
+      <p class="proc-desc">Wireframes, prototypes &amp; design systems. You see exactly what you're getting before we build.</p>
+      <div class="proc-line"></div>
+    </div>
+    <div class="proc-step reveal rd3">
+      <div class="proc-num">03</div>
+      <span class="proc-icon">💻</span>
+      <div class="proc-title">Build</div>
+      <p class="proc-desc">Clean code, tested thoroughly, delivered in sprints with full transparency throughout.</p>
+      <div class="proc-line"></div>
+    </div>
+    <div class="proc-step reveal rd4">
+      <div class="proc-num">04</div>
+      <span class="proc-icon">📈</span>
+      <div class="proc-title">Launch &amp; Grow</div>
+      <p class="proc-desc">Smooth deployment, performance monitoring &amp; ongoing support as your product evolves.</p>
+      <div class="proc-line"></div>
+    </div>
+  </div>
+
+  <!-- ROBOT: process -->
+  <div class="robot-stage" style="width:460px;height:520px;right:-40px;top:50%;">
+    <canvas class="robot-canvas" width="460" height="520"></canvas>
+  </div>
+</section>
+
+<div class="gold-rule"></div>
+
+<!-- ================================================================
+     WORK
+     ================================================================ -->
+<section id="work">
+  <div class="s-label reveal">Selected Work</div>
+  <h2 class="s-title reveal">Projects That <em>Delivered</em></h2>
+
+  <div class="projects-grid">
+
+    <!-- Project 1 — full width -->
+    <div class="proj-card reveal">
+      <div class="proj-bg pb-1">
+        <div class="pb-glow"></div>
+        <svg viewBox="0 0 900 400" width="100%" height="100%" style="position:absolute;inset:0;padding:40px;">
+          <rect x="20" y="20" width="860" height="50" rx="6" fill="rgba(201,168,76,0.06)" stroke="rgba(201,168,76,0.18)" stroke-width="1"/>
+          <circle cx="44" cy="45" r="8" fill="rgba(255,80,80,0.55)"/>
+          <circle cx="66" cy="45" r="8" fill="rgba(255,200,0,0.55)"/>
+          <circle cx="88" cy="45" r="8" fill="rgba(201,168,76,0.7)"/>
+          <rect x="110" y="34" width="180" height="20" rx="3" fill="rgba(255,255,255,0.05)"/>
+          <rect x="20" y="88" width="260" height="260" rx="6" fill="rgba(201,168,76,0.04)" stroke="rgba(201,168,76,0.1)" stroke-width="1"/>
+          <rect x="34" y="106" width="110" height="12" rx="3" fill="rgba(255,255,255,0.14)"/>
+          <rect x="34" y="126" width="220" height="8" rx="3"  fill="rgba(255,255,255,0.06)"/>
+          <rect x="34" y="142" width="180" height="8" rx="3"  fill="rgba(255,255,255,0.06)"/>
+          <rect x="34" y="164" width="100" height="32" rx="4" fill="rgba(201,168,76,0.28)"/>
+          <rect x="296" y="88" width="560" height="260" rx="6" fill="rgba(201,168,76,0.03)" stroke="rgba(201,168,76,0.1)" stroke-width="1"/>
+          <rect x="314" y="106" width="520" height="140" rx="4" fill="rgba(201,168,76,0.06)"/>
+          <rect x="314" y="260" width="160" height="55" rx="4" fill="rgba(201,168,76,0.04)"/>
+          <rect x="484" y="260" width="160" height="55" rx="4" fill="rgba(201,168,76,0.04)"/>
+          <rect x="654" y="260" width="160" height="55" rx="4" fill="rgba(201,168,76,0.04)"/>
+        </svg>
+      </div>
+      <div class="proj-info">
+        <div class="proj-cat">SaaS Dashboard</div>
+        <div class="proj-name">Nexus Analytics Platform</div>
+      </div>
+      <div class="proj-arrow">↗</div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="proj-card reveal rd1">
+      <div class="proj-bg pb-2">
+        <div class="pb-glow"></div>
+        <svg viewBox="0 0 500 300" width="100%" height="100%" style="position:absolute;inset:0;padding:30px;">
+          <rect x="150" y="10"  width="200" height="380" rx="20" fill="rgba(232,160,32,0.08)"  stroke="rgba(232,160,32,0.25)"  stroke-width="1.5"/>
+          <rect x="165" y="30"  width="170" height="28"  rx="6"  fill="rgba(255,255,255,0.06)"/>
+          <rect x="165" y="72"  width="170" height="80"  rx="8"  fill="rgba(232,160,32,0.14)"/>
+          <rect x="165" y="166" width="80"  height="68"  rx="6"  fill="rgba(232,160,32,0.09)"/>
+          <rect x="254" y="166" width="80"  height="68"  rx="6"  fill="rgba(232,160,32,0.09)"/>
+          <rect x="165" y="248" width="170" height="38"  rx="18" fill="rgba(232,160,32,0.38)"/>
+        </svg>
+      </div>
+      <div class="proj-info">
+        <div class="proj-cat">Mobile App</div>
+        <div class="proj-name">Velo Fintech App</div>
+      </div>
+      <div class="proj-arrow">↗</div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="proj-card reveal rd2">
+      <div class="proj-bg pb-3">
+        <div class="pb-glow"></div>
+        <svg viewBox="0 0 500 300" width="100%" height="100%" style="position:absolute;inset:0;padding:30px;">
+          <rect x="20"  y="10"  width="460" height="48"  rx="6" fill="rgba(201,168,76,0.06)" stroke="rgba(201,168,76,0.15)" stroke-width="1"/>
+          <rect x="20"  y="72"  width="138" height="198" rx="6" fill="rgba(201,168,76,0.05)" stroke="rgba(201,168,76,0.1)"  stroke-width="1"/>
+          <rect x="168" y="72"  width="138" height="198" rx="6" fill="rgba(201,168,76,0.05)" stroke="rgba(201,168,76,0.1)"  stroke-width="1"/>
+          <rect x="316" y="72"  width="164" height="198" rx="6" fill="rgba(201,168,76,0.1)"  stroke="rgba(201,168,76,0.2)"  stroke-width="1"/>
+          <rect x="330" y="92"  width="134" height="90"  rx="4" fill="rgba(201,168,76,0.15)"/>
+          <rect x="330" y="196" width="80"  height="11"  rx="3" fill="rgba(255,255,255,0.14)"/>
+          <rect x="330" y="216" width="60"  height="11"  rx="3" fill="rgba(255,255,255,0.08)"/>
+          <rect x="330" y="244" width="134" height="10"  rx="3" fill="rgba(201,168,76,0.4)"/>
+        </svg>
+      </div>
+      <div class="proj-info">
+        <div class="proj-cat">E-Commerce</div>
+        <div class="proj-name">Arca Store Platform</div>
+      </div>
+      <div class="proj-arrow">↗</div>
+    </div>
+
+  </div>
+
+  <!-- ROBOT: work -->
+  <div class="robot-stage" style="width:460px;height:520px;right:-50px;top:46%;">
+    <canvas class="robot-canvas" width="460" height="520"></canvas>
+  </div>
+</section>
+
+<div class="gold-rule"></div>
+
+<!-- ================================================================
+     TESTIMONIALS
+     ================================================================ -->
+<section id="testi">
+  <div class="s-label reveal">What Clients Say</div>
+  <h2 class="s-title reveal">They Trusted <em>STIRE</em></h2>
+
+  <div class="testi-grid">
+    <div class="testi-card reveal rd1">
+      <div class="testi-mark">"</div>
+      <p class="testi-text">STIRE delivered our SaaS dashboard in record time. The quality was beyond what we expected — clean code, beautiful UI, and it performs incredibly fast.</p>
+      <div class="testi-author">
+        <div class="testi-av">AK</div>
+        <div>
+          <div class="testi-name">Alex Kim</div>
+          <div class="testi-role">CEO, Nexus Analytics</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-card reveal rd2">
+      <div class="testi-mark">"</div>
+      <p class="testi-text">The mobile app they built has a 4.9 star rating on both stores. STIRE understands how to marry design with technical execution perfectly.</p>
+      <div class="testi-author">
+        <div class="testi-av">SR</div>
+        <div>
+          <div class="testi-name">Sara Reeve</div>
+          <div class="testi-role">Founder, Velo App</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-card reveal rd3">
+      <div class="testi-mark">"</div>
+      <p class="testi-text">Our conversion rate doubled after the new e-commerce launch. The attention to UX flow was something else. STIRE thinks strategically.</p>
+      <div class="testi-author">
+        <div class="testi-av">MO</div>
+        <div>
+          <div class="testi-name">Mark Owens</div>
+          <div class="testi-role">Director, Arca Brand</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-rule"></div>
+
+<!-- ================================================================
+     CTA
+     ================================================================ -->
+<section id="cta">
+  <div style="position:relative;z-index:2;">
+    <div class="s-label reveal" style="justify-content:center;color:var(--gold);">Ready to Build?</div>
+    <h2 class="cta-title reveal">
+      LET'S <span>CREATE</span><br>SOMETHING
+    </h2>
+    <p class="cta-sub reveal">
+      Tell us about your project. We'll respond within 24 hours
+      with a clear plan, honest timeline and a quote.
+    </p>
+    <a href="mailto:hello@stire.dev" class="btn-gold reveal" style="font-size:0.8rem;padding:18px 56px;letter-spacing:3px;">
+      Start Your Project &rarr;
+    </a>
+    <a href="mailto:hello@stire.dev" class="cta-email reveal">hello@stire.dev</a>
+  </div>
+
+  <!-- Star decorations -->
+  <svg style="position:absolute;top:10%;left:6%;opacity:0.15;" width="56" height="56" viewBox="0 0 56 56">
+    <polygon points="28,4 33,20 50,20 37,30 42,46 28,37 14,46 19,30 6,20 23,20" fill="none" stroke="#c9a84c" stroke-width="1.5"/>
+  </svg>
+  <svg style="position:absolute;bottom:14%;right:7%;opacity:0.1;" width="72" height="72" viewBox="0 0 72 72">
+    <polygon points="36,6 42,26 62,26 46,38 52,58 36,46 20,58 26,38 10,26 30,26" fill="#c9a84c"/>
+  </svg>
+
+  <!-- ROBOT: CTA — left side -->
+  <div class="robot-stage" style="width:440px;height:500px;right:auto;left:-60px;top:50%;">
+    <canvas class="robot-canvas" width="440" height="500"></canvas>
+  </div>
+</section>
+
+<!-- ================================================================
+     FOOTER
+     ================================================================ -->
+<footer>
+  <div class="f-logo">STI<span>RE</span></div>
+  <div class="f-links">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#work">Work</a>
+    <a href="#cta">Contact</a>
+  </div>
+  <div class="f-copy">&copy; 2025 STIRE. All rights reserved.</div>
+</footer>
+
+<!-- ================================================================
+     SCRIPTS
+     ================================================================ -->
+<script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/robot.js"></script>
+
+</body>
+</html>
